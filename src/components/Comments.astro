@@ -1,0 +1,84 @@
+---
+/**
+ * giscus 评论：数据存放在 GitHub Discussions。
+ * 未配置 repoId / categoryId 时不渲染。
+ */
+import config from "@/config";
+
+const { comments } = config;
+const enabled =
+  comments.provider === "giscus" && comments.repoId && comments.categoryId;
+---
+
+{
+  enabled && (
+    <section id="comments" data-pagefind-ignore class="mt-10">
+      <h2 class="mb-4 text-xl font-semibold">评论</h2>
+      <div
+        class="giscus"
+        data-repo={comments.repo}
+        data-repo-id={comments.repoId}
+        data-category={comments.category}
+        data-category-id={comments.categoryId}
+      />
+      <noscript>
+        <p class="text-muted-foreground text-sm">评论功能需要启用 JavaScript。</p>
+      </noscript>
+    </section>
+  )
+}
+
+<script>
+  function loadGiscus() {
+    const container = document.querySelector<HTMLElement>(".giscus");
+    if (!container || container.querySelector("iframe")) return;
+    container.innerHTML = "";
+    const theme =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "dark"
+        : "light";
+    const s = document.createElement("script");
+    s.src = "https://giscus.app/client.js";
+    s.async = true;
+    s.crossOrigin = "anonymous";
+    const attrs: Record<string, string> = {
+      "data-repo": container.dataset.repo ?? "",
+      "data-repo-id": container.dataset.repoId ?? "",
+      "data-category": container.dataset.category ?? "",
+      "data-category-id": container.dataset.categoryId ?? "",
+      "data-mapping": "pathname",
+      "data-strict": "1",
+      "data-reactions-enabled": "1",
+      "data-emit-metadata": "0",
+      "data-input-position": "top",
+      "data-theme": theme,
+      "data-lang": "zh-CN",
+      "data-loading": "lazy",
+    };
+    for (const [k, v] of Object.entries(attrs)) s.setAttribute(k, v);
+    container.appendChild(s);
+  }
+
+  function syncGiscusTheme() {
+    const iframe = document.querySelector<HTMLIFrameElement>(
+      "iframe.giscus-frame"
+    );
+    if (!iframe) return;
+    const theme =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "dark"
+        : "light";
+    iframe.contentWindow?.postMessage(
+      { giscus: { setConfig: { theme } } },
+      "https://giscus.app"
+    );
+  }
+
+  loadGiscus();
+  document.addEventListener("astro:after-swap", loadGiscus);
+  // 跟随站点深浅色切换
+  new MutationObserver(syncGiscusTheme).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"],
+  });
+</script>

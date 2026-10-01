@@ -1,0 +1,17 @@
+# build output
+dist/
+# generated types
+.astro/
+# dependencies
+node_modules/
+# logs
+*.log
+# environment variables
+.env
+.env.production
+# os / editor
+.DS_Store
+.idea/
+# pagefind (generated into dist at build time)
+public/pagefind
+.pnpm-store

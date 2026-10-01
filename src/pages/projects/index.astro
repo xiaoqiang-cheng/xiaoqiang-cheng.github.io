@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import config from "@/config";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<Layout title={`项目 | ${config.site.title}`}>
+  <Header />
+  <Breadcrumb />
+  <Main pageTitle="项目与工具" pageDesc="我做过或正在维护的开源工具、论文与竞赛成果。">
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {projects.map(project => <ProjectCard {...project} />)}
+    </ul>
+  </Main>
+  <Footer />
+</Layout>

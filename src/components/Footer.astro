@@ -1,0 +1,60 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import Socials from "./Socials.astro";
+import config from "@/config";
+
+type Props = {
+  noMarginTop?: boolean;
+} & HTMLAttributes<"footer">;
+
+const { noMarginTop = false, class: className, ...attrs } = Astro.props;
+
+const { site, footer } = config;
+const currentYear = new Date().getFullYear();
+const gonganCode = footer.gongan.match(/\d+/)?.[0];
+---
+
+<footer
+  class:list={["app-layout", { "mt-auto": !noMarginTop }, className]}
+  {...attrs}
+>
+  <div
+    class="border-border flex flex-col items-center justify-between gap-2 border-t py-6 sm:flex-row-reverse sm:py-4"
+  >
+    <Socials />
+    <div
+      class="text-muted-foreground flex flex-col items-center gap-x-3 gap-y-1 text-sm sm:flex-row sm:flex-wrap"
+    >
+      <span>© 2018–{currentYear} {site.title}</span>
+      <a
+        href="/rss.xml"
+        class="hover:text-accent underline decoration-dashed underline-offset-4"
+        >RSS</a
+      >
+      {
+        footer.icp && (
+          <a
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="hover:text-accent"
+          >
+            {footer.icp}
+          </a>
+        )
+      }
+      {
+        footer.gongan && (
+          <a
+            href={`https://beian.mps.gov.cn/#/query/webSearch?code=${gonganCode ?? ""}`}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="hover:text-accent"
+          >
+            {footer.gongan}
+          </a>
+        )
+      }
+    </div>
+  </div>
+</footer>
