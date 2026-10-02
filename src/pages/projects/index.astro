@@ -17,7 +17,7 @@ const projects = (await getCollection("projects")).sort(
   <Header />
   <Breadcrumb />
   <Main pageTitle="项目与工具" pageDesc="我做过或正在维护的开源工具、论文与竞赛成果。">
-    <ul class="grid gap-4 sm:grid-cols-2">
+    <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {projects.map(project => <ProjectCard {...project} />)}
     </ul>
   </Main>

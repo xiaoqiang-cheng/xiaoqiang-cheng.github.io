@@ -1,18 +1,19 @@
 ---
 import { getEntry, render } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
-import Main from "@/components/Main.astro";
 import Footer from "@/components/Footer.astro";
+import Socials from "@/components/Socials.astro";
+import LinkButton from "@/components/LinkButton.astro";
 import config from "@/config";
+import avatar from "@/assets/images/avatar.jpg";
 
 const about = await getEntry("pages", "about");
 
 if (!about) {
-  throw new Error(
-    "Missing content entry: `about.md` in `content/pages/`"
-  );
+  throw new Error("Missing content entry: `about.md` in `content/pages/`");
 }
 
 const { Content } = await render(about);
@@ -25,12 +26,38 @@ const { Content } = await render(about);
   canonicalURL={about.data.canonicalURL}
 >
   <Header />
-
   <Breadcrumb />
-
-  <Main pageTitle={about.data.title} class="app-prose">
-    <Content />
-  </Main>
-
+  <main id="main-content" class="app-layout pb-8">
+    <div class="flex flex-col gap-8 md:flex-row md:items-start md:gap-12">
+      <aside class="flex shrink-0 flex-col items-center gap-4 md:w-64 md:items-start">
+        <Image
+          src={avatar}
+          alt="程晓强"
+          width={320}
+          height={320}
+          class="border-border size-40 rounded-full border object-cover md:size-48"
+          loading="eager"
+        />
+        <div class="text-center md:text-left">
+          <h1 class="text-2xl font-bold tracking-tight">程晓强</h1>
+          <p class="text-muted-foreground">Xiaoqiang Cheng</p>
+          <p class="text-muted-foreground mt-1 text-sm">
+            自动驾驶感知算法工程师 · 驭势科技
+          </p>
+        </div>
+        <Socials />
+        <LinkButton
+          href="/cv/xiaoqiang-cheng-cv.pdf"
+          target="_blank"
+          class="border-border hover:border-accent hover:text-accent rounded-md border px-3 py-1.5 text-sm"
+        >
+          下载简历 (PDF)
+        </LinkButton>
+      </aside>
+      <article class="app-prose min-w-0 flex-1">
+        <Content />
+      </article>
+    </div>
+  </main>
   <Footer />
 </Layout>

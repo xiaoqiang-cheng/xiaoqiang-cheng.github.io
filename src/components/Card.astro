@@ -15,21 +15,38 @@ const { title, description: desc, ...props } = data;
 const description = desc || excerpt(body);
 ---
 
-<li class="my-6">
-  <a
-    href={getPostUrl(id, filePath, Astro.currentLocale)}
-    class:list={[
-      "text-accent inline-block text-lg font-medium",
-      "decoration-dashed underline-offset-4 hover:underline",
-      "focus-visible:no-underline focus-visible:underline-offset-0",
-    ]}
-  >
-    <Heading transition:name={toTransitionName(id)}>
-      {title}
-    </Heading>
-  </a>
-  <Datetime {...props} />
-  <p class="text-muted-foreground mt-1 text-sm leading-relaxed sm:text-base">
-    {description}
-  </p>
+<li class="border-border border-b py-6 first:pt-2 last:border-b-0">
+  <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-6">
+    <Datetime {...props} class="sm:w-36 sm:shrink-0" />
+    <div class="min-w-0 flex-1">
+      <a
+        href={getPostUrl(id, filePath, Astro.currentLocale)}
+        class:list={[
+          "text-foreground hover:text-accent inline-block text-xl font-semibold tracking-tight",
+          "decoration-dashed underline-offset-4 hover:underline",
+          "focus-visible:no-underline focus-visible:underline-offset-0",
+        ]}
+      >
+        <Heading transition:name={toTransitionName(id)}>
+          {title}
+        </Heading>
+      </a>
+      {
+        description && (
+          <p class="text-muted-foreground mt-2 leading-relaxed">
+            {description}
+          </p>
+        )
+      }
+      {
+        props.tags?.length > 0 && (
+          <p class="text-muted-foreground mt-2 flex flex-wrap gap-x-3 text-sm">
+            {props.tags.map((tag: string) => (
+              <span>#{tag}</span>
+            ))}
+          </p>
+        )
+      }
+    </div>
+  </div>
 </li>

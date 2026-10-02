@@ -24,16 +24,33 @@
 }
 
 @utility max-w-app {
-  @apply max-w-3xl;
+  @apply max-w-5xl;
 }
 
-/* 中文正文：稍大的行高与两端留白更舒适 */
+/* 中文阅读：更大的基础字号与行高 */
+html {
+  font-size: 17px;
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+}
 .app-prose {
-  @apply leading-relaxed;
+  @apply max-w-none text-[1.0625rem] leading-[1.9];
+}
+.app-prose h2 {
+  @apply mt-12 text-2xl font-semibold tracking-tight;
+}
+.app-prose h3 {
+  @apply mt-8 text-xl font-semibold;
+}
+.app-prose p {
+  @apply my-5;
 }
 
 @utility app-layout {
-  @apply max-w-app mx-auto w-full px-4;
+  @apply max-w-app mx-auto w-full px-5 sm:px-8;
 }
 
 @utility active-nav {

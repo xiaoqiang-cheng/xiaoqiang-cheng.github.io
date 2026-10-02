@@ -24,7 +24,4 @@ I'm Xiaoqiang Cheng, a perception algorithm engineer working on autonomous drivi
 
 ## 联系我
 
-- 邮件：[xiaoqiang.cheng@foxmail.com](mailto:xiaoqiang.cheng@foxmail.com)
-- GitHub：[xiaoqiang-cheng](https://github.com/xiaoqiang-cheng)
-- 知乎：[程晓强](https://www.zhihu.com/people/cheng-xiao-21-61)
-- 简历：[CV (PDF)](/cv/xiaoqiang-cheng-cv.pdf)
+邮件 [xiaoqiang.cheng@foxmail.com](mailto:xiaoqiang.cheng@foxmail.com)，或通过左侧的 GitHub / 知乎找到我。
