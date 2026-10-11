@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+const yearly = (await getCollection("yearly")).sort((a, b) => b.data.year - a.data.year);
+---
+
+<Layout title={`年度回顾 | ${config.site.title}`}>
+  <Header />
+  <Breadcrumb />
+  <Main pageTitle="年度回顾" pageDesc="记录每一年走过的路，也回望那些重要的人和事。">
+    <ul class="divide-border divide-y">
+      {yearly.map(entry => (
+        <li class="py-5 first:pt-0">
+          <a class="group block" href={`/yearly/${entry.data.year}/`}>
+            <div class="flex items-baseline justify-between gap-4">
+              <h2 class="text-xl font-semibold group-hover:text-accent">{entry.data.title}</h2>
+              <span class="text-muted-foreground text-sm">{entry.data.year}</span>
+            </div>
+            {entry.data.description && <p class="text-muted-foreground mt-1">{entry.data.description}</p>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </Main>
+  <Footer />
+</Layout>

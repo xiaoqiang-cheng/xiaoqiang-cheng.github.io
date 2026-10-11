@@ -66,4 +66,13 @@ const projects = defineCollection({
     }),
 });
 
-export const collections = { posts, pages, projects };
+const yearly = defineCollection({
+  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./content/yearly" }),
+  schema: z.object({
+    year: z.coerce.number().int(),
+    title: z.string().default("年度回顾"),
+    description: z.string().default(""),
+  }),
+});
+
+export const collections = { posts, pages, projects, yearly };

@@ -1,9 +1,11 @@
 ---
 title: "关于我"
-description: "程晓强（Xiaoqiang Cheng）：自动驾驶感知算法工程师，这里记录技术、工具与生活。"
+description: "程晓强（Xiaoqiang Cheng）：从计算机视觉到机器人 Agent 开发，记录技术、工具与生活。"
 ---
 
-我是程晓强，2021 年硕士毕业于天津大学，硕士期间研究自动驾驶感知技术，主要针对基于 LiDAR 的目标检测与跟踪任务。毕业后加入驭势科技（UISEE），成为一名自动驾驶感知算法工程师并工作至今，具备多年感知算法研究与落地经验。
+我是程晓强，2021 年获得天津大学控制工程硕士学位。我的工作经历横跨计算机视觉、自动驾驶和机器人 Agent：2021 年 3 月至 2024 年 11 月在驭势科技（UISEE）负责自动驾驶感知算法，2024 年 11 月至 2026 年 7 月在大疆创新从事计算机视觉算法，2026 年 7 月 20 日起在求之科技参与 Agent 开发。
+
+目前关注语音助手、意图识别、声明式能力体系、能力编排、Fast-Intent、机器人控制台与机器人 Agent，持续探索如何让复杂系统更可靠、更易用。
 
 在学习和工作期间，和团队一起参与了多项自动驾驶相关竞赛并取得不错的成绩，也参与过一些顶会论文的工作。
 
@@ -20,7 +22,9 @@ description: "程晓强（Xiaoqiang Cheng）：自动驾驶感知算法工程师
 
 ## English
 
-I'm Xiaoqiang Cheng, a perception algorithm engineer working on autonomous driving at UISEE. I received my master's degree from Tianjin University in 2021, where I focused on LiDAR-based 3D object detection and tracking. My work covers 2D/3D detection, tracking and segmentation, as well as deployment on edge platforms (TensorRT, SNPE, custom CUDA kernels). I enjoy building tools, playing ball games and hiking, and hope to work on things that are both fun and impactful.
+I'm Xiaoqiang Cheng. I received my master's degree in Control Engineering from Tianjin University in 2021. I worked on autonomous driving perception at UISEE from 2021 to 2024, computer vision algorithms at DJI from 2024 to 2026, and joined Qiuzhi Technology in July 2026 to work on agent development.
+
+My current interests include voice assistants, intent recognition, declarative capability systems, capability orchestration, Fast-Intent, robot consoles, and robot agents. My earlier work covered 2D/3D detection, tracking, segmentation, LiDAR perception, and deployment with TensorRT and CUDA.
 
 ## 联系我
 
