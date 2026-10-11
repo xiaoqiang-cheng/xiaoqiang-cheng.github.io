@@ -27,26 +27,72 @@
   @apply max-w-5xl;
 }
 
-/* 中文阅读：更大的基础字号与行高 */
+/* 页面字号与正文阅读节奏 */
 html {
-  font-size: 17px;
-}
-@media (max-width: 640px) {
-  html {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 .app-prose {
-  @apply max-w-none text-[1.0625rem] leading-[1.9];
+  @apply max-w-none;
+  font-size: 17px;
+  line-height: 1.85;
+  overflow-wrap: break-word;
 }
 .app-prose h2 {
-  @apply mt-12 text-2xl font-semibold tracking-tight;
+  @apply mt-9 text-xl font-semibold tracking-tight;
+  line-height: 1.4;
 }
 .app-prose h3 {
-  @apply mt-8 text-xl font-semibold;
+  @apply mt-7 text-lg font-semibold;
+  line-height: 1.5;
 }
 .app-prose p {
-  @apply my-5;
+  margin-block: 1.15em;
+}
+.app-prose > :first-child {
+  margin-top: 0;
+}
+.app-prose ul,
+.app-prose ol {
+  margin-block: 1em;
+}
+.app-prose li {
+  margin-block: 0.4em;
+}
+.app-prose blockquote {
+  font-weight: 400;
+  font-style: normal;
+  padding-inline-start: 1em;
+}
+.app-prose blockquote p:first-of-type::before,
+.app-prose blockquote p:last-of-type::after {
+  content: none;
+}
+.app-prose hr {
+  margin-block: 2em;
+}
+.app-prose details:not(.callout) {
+  display: block;
+  margin-block: 1.5em;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.app-prose details:not(.callout) summary {
+  font-weight: 500;
+}
+.app-prose details:not(.callout) li {
+  margin-block: 0.2em;
+}
+.reading-layout {
+  max-width: 808px;
+}
+@media (max-width: 640px) {
+  .app-prose {
+    font-size: 16px;
+    line-height: 1.8;
+  }
 }
 
 @utility app-layout {

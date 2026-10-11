@@ -8,19 +8,31 @@ import config from "@/config";
 
 export async function getStaticPaths() {
   const yearly = await getCollection("yearly");
-  return yearly.map(entry => ({ params: { year: String(entry.data.year) }, props: { entry } }));
+  return yearly.map(entry => ({
+    params: { year: String(entry.data.year) },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<Layout title={`${entry.data.title} | ${config.site.title}`} description={entry.data.description}>
+<Layout
+  title={`${entry.data.title} | ${config.site.title}`}
+  description={entry.data.description}
+>
   <Header />
   <Breadcrumb />
-  <main id="main-content" class="app-layout prose prose-neutral dark:prose-invert my-8 max-w-3xl">
-    <h1>{entry.data.title}</h1>
-    <Content />
+  <main
+    id="main-content"
+    class="app-layout reading-layout my-8"
+    data-pagefind-body
+  >
+    <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
+      {entry.data.title}
+    </h1>
+    <article class="app-prose mt-7"><Content /></article>
   </main>
   <Footer />
 </Layout>

@@ -43,27 +43,30 @@ const homePath = getRelativeLocaleUrl(locale, "");
       <Image
         src={avatar}
         alt="程晓强"
-        width={128}
-        height={128}
-        class="border-border size-16 shrink-0 rounded-full border object-cover sm:size-20"
+        width={240}
+        height={240}
+        class="border-border size-24 shrink-0 rounded-full border object-cover sm:size-32"
         loading="eager"
       />
       <div class="min-w-0 flex-1">
         <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
           程晓强
-          <span class="text-muted-foreground ms-1 text-base font-normal"
+          <span class="text-muted-foreground mt-1 block text-base font-normal"
             >Xiaoqiang Cheng</span
           >
         </h1>
         <p class="text-muted-foreground mt-1 leading-relaxed">
-          自动驾驶感知算法工程师。记录技术笔记、工具分享与生活随笔。
+          在求之科技做机器人 Agent 开发，之前从事自动驾驶感知和计算机视觉。
+        </p>
+        <p class="text-muted-foreground mt-1 text-sm leading-relaxed">
+          这里记录技术、工具和生活。
           <a
             href="/about/"
             class="text-foreground hover:text-accent underline decoration-dashed underline-offset-4"
             >{t.nav.about} →</a
           >
         </p>
-        <div class="mt-2 -ms-1"><Socials /></div>
+        <div class="-ms-1 mt-2"><Socials /></div>
       </div>
     </section>
 

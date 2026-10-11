@@ -7,7 +7,7 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://discoverpaw.com",
     title: "程晓强",
-    description: "自动驾驶感知算法工程师的个人站点：技术笔记、工具分享与生活随笔。",
+    description: "程晓强的个人站点：机器人 Agent、计算机视觉、工具开发与生活随笔。",
     author: "程晓强 Xiaoqiang Cheng",
     profile: "https://discoverpaw.com/about/",
     ogImage: "og.jpg",

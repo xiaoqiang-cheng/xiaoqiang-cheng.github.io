@@ -111,18 +111,23 @@ const ogImage = ogImageUrl
 
   <main
     id="main-content"
-    class:list={["app-layout", { "mt-8": !config.features.showBackButton }]}
+    class:list={[
+      "app-layout reading-layout",
+      { "mt-8": !config.features.showBackButton },
+    ]}
     data-pagefind-body
   >
     <h1
       style={{ viewTransitionName: toTransitionName(post.id) }}
-      class="inline-block text-3xl font-bold tracking-tight sm:text-4xl"
+      class="inline-block text-2xl leading-snug font-bold tracking-tight sm:text-3xl"
     >
       {title}
     </h1>
 
-    <div class="my-2 flex items-center gap-2">
-      <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+    <div
+      class="text-muted-foreground mt-3 flex flex-wrap items-center gap-2 text-sm"
+    >
+      <Datetime {pubDatetime} {modDatetime} {timezone} />
       <span
         aria-hidden="true"
         class:list={[
@@ -138,8 +143,8 @@ const ogImage = ogImageUrl
     <article
       id="article"
       class:list={[
-        "mt-8 w-full",
-        "app-prose max-w-app",
+        "mt-7 w-full",
+        "app-prose",
         "prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)",
       ]}
     >
