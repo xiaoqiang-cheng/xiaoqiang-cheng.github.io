@@ -1,0 +1,622 @@
+/* Source Han Serif SC Regular, split by Unicode range for on-demand loading. */
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-0000.woff2") format("woff2");
+  unicode-range: U+0-1FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-0200.woff2") format("woff2");
+  unicode-range: U+200-3FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-0400.woff2") format("woff2");
+  unicode-range: U+400-5FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-1000.woff2") format("woff2");
+  unicode-range: U+1000-11FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-1e00.woff2") format("woff2");
+  unicode-range: U+1E00-1FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2000.woff2") format("woff2");
+  unicode-range: U+2000-21FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2200.woff2") format("woff2");
+  unicode-range: U+2200-23FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2400.woff2") format("woff2");
+  unicode-range: U+2400-25FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2600.woff2") format("woff2");
+  unicode-range: U+2600-27FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2800.woff2") format("woff2");
+  unicode-range: U+2800-29FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2a00.woff2") format("woff2");
+  unicode-range: U+2A00-2BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-2e00.woff2") format("woff2");
+  unicode-range: U+2E00-2FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3000.woff2") format("woff2");
+  unicode-range: U+3000-31FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3200.woff2") format("woff2");
+  unicode-range: U+3200-33FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3400.woff2") format("woff2");
+  unicode-range: U+3400-35FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3600.woff2") format("woff2");
+  unicode-range: U+3600-37FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3800.woff2") format("woff2");
+  unicode-range: U+3800-39FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3a00.woff2") format("woff2");
+  unicode-range: U+3A00-3BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3c00.woff2") format("woff2");
+  unicode-range: U+3C00-3DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-3e00.woff2") format("woff2");
+  unicode-range: U+3E00-3FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4000.woff2") format("woff2");
+  unicode-range: U+4000-41FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4200.woff2") format("woff2");
+  unicode-range: U+4200-43FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4400.woff2") format("woff2");
+  unicode-range: U+4400-45FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4600.woff2") format("woff2");
+  unicode-range: U+4600-47FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4800.woff2") format("woff2");
+  unicode-range: U+4800-49FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4a00.woff2") format("woff2");
+  unicode-range: U+4A00-4BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4c00.woff2") format("woff2");
+  unicode-range: U+4C00-4DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-4e00.woff2") format("woff2");
+  unicode-range: U+4E00-4FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5000.woff2") format("woff2");
+  unicode-range: U+5000-51FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5200.woff2") format("woff2");
+  unicode-range: U+5200-53FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5400.woff2") format("woff2");
+  unicode-range: U+5400-55FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5600.woff2") format("woff2");
+  unicode-range: U+5600-57FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5800.woff2") format("woff2");
+  unicode-range: U+5800-59FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5a00.woff2") format("woff2");
+  unicode-range: U+5A00-5BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5c00.woff2") format("woff2");
+  unicode-range: U+5C00-5DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-5e00.woff2") format("woff2");
+  unicode-range: U+5E00-5FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6000.woff2") format("woff2");
+  unicode-range: U+6000-61FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6200.woff2") format("woff2");
+  unicode-range: U+6200-63FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6400.woff2") format("woff2");
+  unicode-range: U+6400-65FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6600.woff2") format("woff2");
+  unicode-range: U+6600-67FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6800.woff2") format("woff2");
+  unicode-range: U+6800-69FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6a00.woff2") format("woff2");
+  unicode-range: U+6A00-6BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6c00.woff2") format("woff2");
+  unicode-range: U+6C00-6DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-6e00.woff2") format("woff2");
+  unicode-range: U+6E00-6FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7000.woff2") format("woff2");
+  unicode-range: U+7000-71FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7200.woff2") format("woff2");
+  unicode-range: U+7200-73FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7400.woff2") format("woff2");
+  unicode-range: U+7400-75FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7600.woff2") format("woff2");
+  unicode-range: U+7600-77FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7800.woff2") format("woff2");
+  unicode-range: U+7800-79FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7a00.woff2") format("woff2");
+  unicode-range: U+7A00-7BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7c00.woff2") format("woff2");
+  unicode-range: U+7C00-7DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-7e00.woff2") format("woff2");
+  unicode-range: U+7E00-7FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8000.woff2") format("woff2");
+  unicode-range: U+8000-81FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8200.woff2") format("woff2");
+  unicode-range: U+8200-83FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8400.woff2") format("woff2");
+  unicode-range: U+8400-85FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8600.woff2") format("woff2");
+  unicode-range: U+8600-87FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8800.woff2") format("woff2");
+  unicode-range: U+8800-89FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8a00.woff2") format("woff2");
+  unicode-range: U+8A00-8BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8c00.woff2") format("woff2");
+  unicode-range: U+8C00-8DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-8e00.woff2") format("woff2");
+  unicode-range: U+8E00-8FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9000.woff2") format("woff2");
+  unicode-range: U+9000-91FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9200.woff2") format("woff2");
+  unicode-range: U+9200-93FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9400.woff2") format("woff2");
+  unicode-range: U+9400-95FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9600.woff2") format("woff2");
+  unicode-range: U+9600-97FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9800.woff2") format("woff2");
+  unicode-range: U+9800-99FF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9a00.woff2") format("woff2");
+  unicode-range: U+9A00-9BFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9c00.woff2") format("woff2");
+  unicode-range: U+9C00-9DFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-9e00.woff2") format("woff2");
+  unicode-range: U+9E00-9FFF;
+}
+
+@font-face {
+  font-family: "Qzone Reading Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/reading-serif/regular-a000.woff2") format("woff2");
+  unicode-range: U+A000-10FFFF;
+}

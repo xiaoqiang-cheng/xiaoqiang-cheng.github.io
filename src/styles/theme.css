@@ -20,6 +20,9 @@
   --font-mono-stack:
     ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas,
     "Liberation Mono", "PingFang SC", "Microsoft YaHei", monospace;
+  --font-reading:
+    "Qzone Reading Serif", "Source Han Serif SC", "Noto Serif CJK SC",
+    "Noto Serif SC", "Songti SC", "STSong", serif;
 }
 
 /* Light theme values */

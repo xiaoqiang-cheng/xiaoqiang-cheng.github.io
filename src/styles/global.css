@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./theme.css";
+@import "./reading-font.css";
 @import "./typography.css";
 @import "rehype-callouts/theme/obsidian";
 @import "katex/dist/katex.min.css";
@@ -86,12 +87,119 @@ html {
   margin-block: 0.2em;
 }
 .reading-layout {
-  max-width: 808px;
+  max-width: 724px;
+}
+
+/* 长文采用独立阅读样式，导航和资料页保留界面字体与节奏。 */
+.reading-layout > h1 {
+  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.reading-prose {
+  margin-top: 2.75rem;
+  font-family: var(--font-reading);
+  font-size: 18px;
+  line-height: 1.95;
+  letter-spacing: 0.015em;
+}
+.reading-prose p {
+  margin-block: 1em;
+}
+.reading-prose :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-sans);
+}
+.reading-prose h2 {
+  margin-top: 2.8em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.reading-prose h3 {
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+  letter-spacing: 0;
+}
+.reading-prose h4 {
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+}
+.reading-prose strong {
+  font-weight: 600;
+}
+.reading-prose ul,
+.reading-prose ol {
+  padding-inline-start: 1.5em;
+  margin-block: 1.3em;
+}
+.reading-prose li {
+  padding-inline-start: 0.2em;
+  margin-block: 0.6em;
+}
+.reading-prose li > p {
+  margin-block: 0.65em;
+}
+.reading-prose blockquote {
+  margin-block: 2em;
+  padding: 0.1em 0 0.1em 1.25em;
+  border-inline-start: 2px solid var(--border);
+  color: var(--muted-foreground);
+  opacity: 1;
+}
+.reading-prose blockquote p {
+  color: inherit;
+  margin-block: 0.75em;
+}
+.reading-prose hr {
+  width: 4rem;
+  margin: 3em auto;
+}
+.reading-prose img {
+  margin-block: 2em;
+}
+.reading-prose pre,
+.reading-prose table {
+  font-size: 0.85em;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+.reading-prose details:not(.callout) {
+  margin-block: 0 2.25rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 0;
+  background: color-mix(in srgb, var(--muted) 45%, transparent);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+.reading-prose details:not(.callout) summary {
+  color: var(--muted-foreground);
+}
+.reading-prose details:not(.callout) ul,
+.reading-prose details:not(.callout) ol {
+  padding-inline-start: 1.25em;
+}
+.reading-prose details:not(.callout) li {
+  margin-block: 0.15em;
 }
 @media (max-width: 640px) {
   .app-prose {
     font-size: 16px;
     line-height: 1.8;
+  }
+  .reading-prose {
+    margin-top: 2rem;
+    font-size: 17px;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+  }
+  .reading-prose p {
+    margin-block: 0.95em;
   }
 }
 
