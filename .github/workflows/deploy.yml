@@ -50,6 +50,7 @@ jobs:
   server:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -63,8 +64,8 @@ jobs:
           echo "${{ secrets.DEPLOY_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
       - name: rsync to server
         run: |
-          rsync -az --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
+          rsync -az --checksum --delete --info=progress2 --timeout=120 \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes -o BatchMode=yes -o ConnectTimeout=20 -o ServerAliveInterval=30 -o ServerAliveCountMax=3" \
             dist/ "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/"
       - name: Smoke check
         run: curl -fsS -o /dev/null -w "discoverpaw.com -> %{http_code}\n" https://discoverpaw.com/
